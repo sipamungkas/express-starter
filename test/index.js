@@ -14,7 +14,7 @@ describe('API Test', () => {
       .end((err, res) => {
         expect(err).to.be.null;
         expect(res).to.have.status(200);
-        expect(res.body).to.be.null;
+        expect(res.body).to.be.empty;
         done();
       });
   });
