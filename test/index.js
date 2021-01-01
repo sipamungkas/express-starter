@@ -10,10 +10,11 @@ describe('API Test', () => {
   it('should GET /', (done) => {
     chai
       .request(app)
-      .get('/a')
+      .get('/')
       .end((err, res) => {
         expect(err).to.be.null;
-        expect(res).to.have.status(404);
+        expect(res).to.have.status(200);
+        expect(res.body).to.be.null;
         done();
       });
   });
