@@ -18,7 +18,7 @@ describe('API Test', () => {
         done();
       });
   });
-  it('should GET /v1/users/session', (done) => {
+  it('should POST /v1/users/session', (done) => {
     chai
       .request(app)
       .post('/v1/users/session')
