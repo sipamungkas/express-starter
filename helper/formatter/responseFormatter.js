@@ -8,7 +8,7 @@ const meta = (message, code, status) => {
 };
 
 const formatRes = (metaData, data) => {
-  const apiResponse = {metaData, data};
+  const apiResponse = {meta: metaData, data};
   return apiResponse;
 };
 
